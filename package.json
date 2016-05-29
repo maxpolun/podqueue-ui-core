@@ -1,0 +1,48 @@
+{
+  "name": "@maxpolun/podqueue-ui-core",
+  "version": "0.0.1",
+  "description": "The application core business logic for podqueue's UI, shared between at least web, and mobile apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && JASMINE_CONFIG_PATH=jasmine.json nyc jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxpolun/podqueue-ui-core.git"
+  },
+  "author": "Max Polun <maxpolun@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxpolun/podqueue-ui-core/issues"
+  },
+  "homepage": "https://github.com/maxpolun/podqueue-ui-core#readme",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.9.0",
+    "jasmine": "^2.4.1",
+    "nyc": "^6.4.4",
+    "standard": "^7.1.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "redux": "^3.5.2"
+  },
+  "standard": {
+    "globals": [
+      "jasmine",
+      "it",
+      "fit",
+      "expect",
+      "describe",
+      "beforeEach",
+      "afterEach"
+    ]
+  },
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js",
+      "src/spec/*"
+    ]
+  }
+}
