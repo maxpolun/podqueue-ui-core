@@ -4,7 +4,9 @@
   "description": "The application core business logic for podqueue's UI, shared between at least web, and mobile apps",
   "main": "index.js",
   "scripts": {
-    "test": "standard && JASMINE_CONFIG_PATH=jasmine.json nyc jasmine"
+    "test": "standard && JASMINE_CONFIG_PATH=jasmine.json nyc jasmine",
+    "build": "webpack --config webpack.config.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
